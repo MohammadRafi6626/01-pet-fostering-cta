@@ -1,0 +1,150 @@
+/* Set a modern, easy-to-read font and a calm background color for the whole page */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #eaf6fb; /* light blue background for calmness */
+}
+
+/* Style the site header at the top of the page */
+header.site-header {
+  background-color: #145374; /* darker blue for distinction */
+  color: #fff; /* white text for contrast */
+  text-align: center; /* center the site name */
+  padding: 18px 0; /* space above and below the site name */
+  margin-bottom: 0; /* no extra space below header */
+}
+
+/* Style the site name inside the header */
+header.site-header h2 {
+  margin: 0; /* remove default margin */
+  font-size: 2em; /* make the site name larger */
+  letter-spacing: 2px; /* add space between letters */
+  font-family: 'Segoe UI', Arial, sans-serif; /* use the same modern font */
+}
+
+/* Style the Call-to-Action (CTA) banner section */
+section.cta-banner {
+  background-color: #1e6f8c; /* deep teal-blue for trust */
+  /* Add a background image with a semi-transparent blue overlay for readability */
+  background-image: linear-gradient(rgba(30, 111, 140, 0.9), rgba(30, 111, 140, 0.7)), url('img/cta-bg.jpg');
+  background-size: cover; /* make the image cover the whole section */
+  background-position: center; /* center the background image */
+  color: #fff; /* white text for contrast */
+  padding: 30px 20px 60px 20px; /* less space at the top, more at the bottom */
+  text-align: center; /* center all text and content */
+  min-height: 450px; /* make the banner tall */
+}
+
+/* Style the main heading inside the CTA banner */
+section.cta-banner h1 {
+  font-size: 3.5em; /* make the heading very large */
+  margin-bottom: 32px; /* space below the heading */
+  letter-spacing: 1px; /* add a little space between letters */
+}
+
+/* Style the description text inside the CTA banner */
+section.cta-banner p {
+  font-size: 1.2em; /* slightly larger text for readability */
+  margin-bottom: 40px; /* space below the description */
+  max-width: 600px; /* limit the width for better reading */
+  margin-left: auto; /* center the paragraph */
+  margin-right: auto; /* center the paragraph */
+}
+
+/* Style the call-to-action button */
+.cta-button {
+  display: inline-block; /* allow setting width and margin */
+  background-color: #3fc1c9; /* bright teal for attention */
+  color: #fff; /* white text */
+  padding: 15px 35px; /* space inside the button */
+  text-decoration: none; /* remove underline from link */
+  font-size: 1.1em; /* slightly larger text */
+  border-radius: 5px; /* rounded corners */
+  font-weight: bold; /* bold text */
+  border: none; /* remove border */
+  cursor: pointer; /* show pointer on hover */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* subtle shadow for emphasis */
+  transition: background 0.2s; /* smooth color change on hover */
+  margin-bottom: 10px; /* space below the button */
+}
+
+/* Change button color when hovered */
+.cta-button:hover {
+  background-color: #38a1b6; /* slightly darker teal */
+}
+
+/* Style the info section below the banner */
+.info-section {
+  max-width: 800px; /* limit the width of the section */
+  margin: 40px auto 0 auto; /* center the section and add space above */
+  padding: 20px; /* space inside the section */
+  background: #fff; /* white background */
+  border-radius: 8px; /* rounded corners */
+  box-shadow: 0 2px 8px rgba(20, 83, 116, 0.08); /* subtle shadow */
+  text-align: center; /* center content by default */
+  /* Use inline-block for simple two-column layout */
+}
+
+/* Make the image and text appear side by side */
+.info-image, .info-text {
+  vertical-align: top; /* align to the top */
+  display: inline-block; /* allow side-by-side layout */
+  width: 48%; /* each takes about half the space */
+  box-sizing: border-box; /* include padding and border in width */
+}
+
+/* Style the image in the info section */
+.info-image {
+  width: 400px;
+  max-width: 100%; /* make image responsive */
+  height: auto; /* keep image aspect ratio */
+  border-radius: 15px; /* rounded corners */
+  margin-bottom: 10px; /* space below image on small screens */
+}
+
+/* Style the text in the info section */
+.info-text {
+  text-align: left; /* align text to the left */
+  padding-left: 30px; /* space between image and text */
+}
+
+/* Adjust main content spacing for better balance */
+main {
+  padding-bottom: 40px; /* add space at the bottom above the footer */
+}
+
+/* Style the footer to make it more noticeable and balanced */
+footer {
+  background-color: #145374; /* match header color for consistency */
+  color: #fff;
+  padding: 28px 0 24px 0; /* more space above and below */
+  margin-top: 40px; /* space above footer */
+  text-align: center;
+  border-top: 4px solid #3fc1c9; /* add a colored top border for emphasis */
+}
+
+/* Style the contact info in the footer */
+.footer-contact {
+  font-size: 1.3em; /* make the text larger */
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Style the email link in the footer for better visibility */
+.footer-contact a {
+  color: #3fc1c9;
+  text-decoration: underline;
+}
+
+/* Responsive styles: stack columns on small screens */
+@media (max-width: 700px) {
+  .info-image, .info-text {
+    display: block; /* stack vertically */
+    width: 100%; /* take full width */
+    padding-left: 0; /* remove left padding */
+  }
+  .info-section {
+    padding: 10px; /* less padding on small screens */
+  }
+}
